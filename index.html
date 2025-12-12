@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="overlay">
+            <div class="title">We are coming soon</div>
+            <div class="date" id="end-Date">20 March 2023 10:10 PM</div>
+
+            <div class="col">
+
+                <div>
+                    <input type="text" readonly value="0">
+                    <br>
+                    <label for="">Days</label>
+                </div>
+                    
+                <div>
+                    <input type="text" readonly value="0">
+                    <br>
+                    <label for="">Hours</label>
+                </div>
+                    
+                <div>
+                    <input type="text" readonly value="0">
+                    <br>
+                    <label for="">Minutes</label>
+                </div>
+                    
+                <div>
+                    <input type="text" readonly value="0">
+                    <br>
+                    <label for="">Seconds</label>
+                </div>
+                    
+
+            </div>
+        </div>
+    </div>
+
+    <div id="finishModal" class="modal-backdrop">
+        <div class="modal">
+            <h2>Countdown Finished</h2>
+            <p>The event time has arrived!</p>
+            <div class="modal-buttons">
+                <button id="closeBtn" class="btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
